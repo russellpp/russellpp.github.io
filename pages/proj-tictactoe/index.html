@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link href="styles.css" rel="stylesheet"></link>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="start-game">
+            <p>tic.tac.toe</p>
+            <form class="name-input">
+                <input type="text" id="player-01" required placeholder="enter player x">
+                <input type="text" id="player-02" required placeholder="enter player o">
+                <input type="button" value="start game" id="start-button">
+            </form>
+        </div>
+        <div id="game" class="game">
+            <div class="display"></div>
+            <p>Player 01</p>
+            <div id="board" class="board">
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+                <div class="block"></div>
+               
+            </div>
+        </div>
+        <div id="result">
+            <p>RESULT!</p>
+            <button>show history</button>
+        </div>
+        <div id="history">
+            <p>history</p>
+            <div id="boardHistory" class="board">
+                <div class="blockH"></div>
+                <div class="blockH"></div>
+                <div class="blockH"></div>
+                <div class="blockH"></div>
+                <div class="blockH"></div>
+                <div class="blockH"></div>
+                <div class="blockH"></div>
+                <div class="blockH"></div>
+                <div class="blockH"></div>
+            </div>
+            <div class="buttons-container">
+                <img id="home-button" class="icon" src="icons/start_icon.svg">
+                <img id="prev-button" class="icon" src="icons/prev_icon.svg">
+                <img id="autoplay-button" class="icon" src="icons/auto_play_icon.png">
+                <img id="next-button" class="icon" src="icons/next_icon.svg">
+                <img id="end-button" class="icon" src="icons/end_icon.svg">
+            </div>
+            <button>start new game</button>
+        </div>
+    </body>
+    <script src="t3game.js"></script>
+    <script src="t3end.js"></script>
+</html>

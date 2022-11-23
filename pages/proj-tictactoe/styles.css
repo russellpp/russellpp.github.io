@@ -1,0 +1,334 @@
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+#start-game {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#start-game p {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+  text-transform: lowercase;
+  top: 25%;
+  letter-spacing: 2px;
+}
+#start-game #player-01,
+#start-game #player-02 {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-transform: lowercase;
+  height: 30px;
+  border: none;
+  border-bottom: 0.5px solid white;
+  width: 170px;
+  background: none;
+  outline: none;
+  text-align: center;
+  padding: none;
+  padding-bottom: 8px;
+  color: white;
+  transition: 0.5s ease;
+}
+#start-game #player-01::-moz-placeholder, #start-game #player-02::-moz-placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-transform: lowercase;
+  color: gray;
+}
+#start-game #player-01:-ms-input-placeholder, #start-game #player-02:-ms-input-placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-transform: lowercase;
+  color: gray;
+}
+#start-game #player-01::placeholder,
+#start-game #player-02::placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-transform: lowercase;
+  color: gray;
+}
+#start-game #player-01:hover::-moz-placeholder, #start-game #player-02:hover::-moz-placeholder {
+  color: white;
+}
+#start-game #player-01:hover:-ms-input-placeholder, #start-game #player-02:hover:-ms-input-placeholder {
+  color: white;
+}
+#start-game #player-01:hover::placeholder,
+#start-game #player-02:hover::placeholder {
+  color: white;
+}
+#start-game #player-01:focus,
+#start-game #player-02:focus {
+  border-bottom: 1.5px solid white;
+  width: 190px;
+}
+#start-game #player-01:focus::-moz-placeholder, #start-game #player-02:focus::-moz-placeholder {
+  color: white;
+}
+#start-game #player-01:focus:-ms-input-placeholder, #start-game #player-02:focus:-ms-input-placeholder {
+  color: white;
+}
+#start-game #player-01:focus::placeholder,
+#start-game #player-02:focus::placeholder {
+  color: white;
+}
+#start-game #player-01 {
+  top: 42%;
+}
+#start-game #player-02 {
+  top: 50%;
+}
+#start-game #start-button {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-transform: lowercase;
+  cursor: pointer;
+  top: 60%;
+  padding: 5px 10px 8px;
+  text-align: center;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+#start-game #start-button:hover {
+  background-color: gray;
+}
+#start-game #start-button:focus {
+  background-color: white;
+  color: black;
+  border: 3px solid gray;
+}
+
+.board {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  display: grid;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+.game .display {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  filter: invert(100%);
+  top: 9%;
+  height: 80px;
+  width: 80px;
+}
+.game p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+}
+.game p:nth-child(2) {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 21%;
+}
+
+.block,
+.blockH {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  filter: invert(100%);
+  border: 2px solid gray;
+  cursor: pointer;
+}
+.block img,
+.blockH img {
+  height: 95px;
+}
+.block:first-child,
+.blockH:first-child {
+  border-top: none;
+  border-left: none;
+}
+.block:nth-child(2),
+.blockH:nth-child(2) {
+  border-top: none;
+}
+.block:nth-child(3),
+.blockH:nth-child(3) {
+  border-top: none;
+  border-right: none;
+}
+.block:nth-child(4),
+.blockH:nth-child(4) {
+  border-left: none;
+}
+.block:nth-child(6),
+.blockH:nth-child(6) {
+  border-right: none;
+}
+.block:nth-child(7),
+.blockH:nth-child(7) {
+  border-left: none;
+  border-bottom: none;
+}
+.block:nth-child(8),
+.blockH:nth-child(8) {
+  border-bottom: none;
+}
+.block:last-child,
+.blockH:last-child {
+  border-bottom: none;
+  border-right: none;
+}
+
+.buttons-container {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 75%;
+}
+
+.icon {
+  height: 70px;
+  width: 70px;
+  filter: invert(50%);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.icon:hover {
+  filter: invert(100%);
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  height: 700px;
+  width: 100vw;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.498);
+}
+#result p {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-transform: lowercase;
+  top: 5%;
+}
+#result button {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-transform: lowercase;
+  top: 83%;
+  padding: 5px 10px 8px;
+  text-align: center;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+#result button:hover {
+  background-color: black;
+  color: white;
+}
+#result button:focus {
+  background-color: white;
+  color: black;
+  border: 3px solid gray;
+}
+
+#history p {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  text-transform: lowercase;
+  top: 17%;
+}
+#history button {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-transform: lowercase;
+  top: 88%;
+  padding: 5px 10px 8px;
+  text-align: center;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#history button:hover {
+  background-color: gray;
+}
+#history button:focus {
+  background-color: white;
+  color: black;
+  border: 3px solid gray;
+}
+
+.hover-x::after {
+  content: url(icons/x-mark.svg);
+  filter: invert(50%);
+  position: relative;
+  left: 11px;
+  height: 95px;
+  width: 95px;
+  display: none;
+}
+.hover-x:hover::after {
+  display: flex;
+}
+
+.hover-o::after {
+  content: url(icons/o-mark.svg);
+  filter: invert(50%);
+  position: relative;
+  left: 6px;
+  height: 95px;
+  width: 95px;
+  display: none;
+}
+.hover-o:hover::after {
+  display: flex;
+}/*# sourceMappingURL=styles.css.map */

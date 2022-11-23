@@ -1,0 +1,28 @@
+html {
+  background-color: rgba(255, 245, 221, 0.9176470588);
+}
+
+body {
+  color: rgb(0, 0, 0);
+}
+body main {
+  display: grid;
+  width: 120vh;
+  height: 120vh;
+  grid-template-columns: repeat(8, 10vh);
+  grid-template-rows: repeat(8, 10vh);
+}
+body main .black {
+  text-align: center;
+  font-size: 7vh;
+  background-color: rgba(24, 88, 41, 0.7647058824);
+  width: 10vh;
+  height: 10vh;
+}
+body main .white {
+  text-align: center;
+  font-size: 7vh;
+  background-color: rgba(143, 156, 102, 0.43);
+  width: 10vh;
+  height: 10vh;
+}/*# sourceMappingURL=styles.css.map */

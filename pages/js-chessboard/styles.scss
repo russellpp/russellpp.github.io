@@ -1,0 +1,41 @@
+html {
+    background-color: #fff5ddea;
+}
+
+body {
+   
+    color: rgb(0, 0, 0);
+    main {
+        
+        
+        display: grid;
+        width: 120vh;
+        height: 120vh;
+        grid-template-columns: repeat(8,10vh);
+        grid-template-rows: repeat(8,10vh) ;
+
+    
+        
+        .black {
+            
+            text-align: center;
+            font-size: 7vh;
+            background-color: #185829c3;
+            width: 10vh;
+            height: 10vh;
+                   
+            }
+        .white {
+            
+            text-align: center;
+            font-size: 7vh;
+            background-color: rgba(143, 156, 102, 0.43);
+            width: 10vh;
+            height: 10vh;
+            
+            }
+        }
+            
+            
+        
+    }

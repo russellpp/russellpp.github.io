@@ -1,0 +1,35 @@
+html {
+  background-color: rgba(255, 245, 221, 0.9176470588);
+}
+
+body {
+  color: rgb(206, 151, 80);
+}
+body main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 80vh;
+  height: 80vh;
+  background-color: yellow;
+}
+body main .one {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+body main .two {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+body main .black {
+  background-color: rgba(41, 111, 37, 0.9176470588);
+  width: 10vh;
+  height: 10vh;
+}
+body main .white {
+  background-color: rgba(164, 161, 86, 0.9176470588);
+  width: 10vh;
+  height: 10vh;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,330 @@
+<html>
+    <head>
+        <title>PHILIPPINE VEGETABLES</title>
+        <meta charset="utf-8">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    </head>
+    <body>
+        <div id="body">
+            <div id="intro">
+                <h1> How many indigenous vegetables do you know? </h1>
+                <h4 id="survey_desc"> we are students of food nutrition 1 and we would like your help so we can gather data on how familiar students are with common and uncommon vegetables found in different parts of the country
+                </h4>
+            </div>
+            <form action="#" method="get">
+                <div id="info" class="container">
+                    <h2>
+                        PERSONAL INFORMATION
+                    </h2>
+                    <h3>
+                        All information you have provided will not be shared to anyone
+                    </h3>
+                    <div id="info_ques">
+                        <div class="container_01">
+                            <label> Full Name
+                                <input type="text" name="name" id="name-label" required="required" placeholder="Juan dela Cruz" size="20" title="Input your name">
+                            </label>
+                        </div>
+                        <div class="container_01">
+                            <label> Email
+                                <input type="text" name="email" id="email-label" required="required" title="Must used correct format" placeholder="juandelacruz@gmail.com" size="20" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                            </label>
+                        </div>
+                        <div class="container_01">
+                            <label> Student Number (first 4 digits only) 
+                                <input type="text" name="number" id="number-label" required="required" title="Must be in the range of 1990-2022" pattern="(2022|2021|2020|[2][0][0-1][0-9]|[1][9][9][0-9])" placeholder="20xx">
+                            </label>
+                        </div>
+                        <div class="container_01">    
+                            <label for="dropdown"> Location
+                                <select name="dropdown" id="dropdown">
+                                    <option class="option-content" value="Greater Manila Area">Greater Manila Area</option>
+                                    <option class="option-content"  value="Rest of Luzon">Rest of Luzon</option>
+                                    <option class="option-content" value="Visayas">Visayas</option>
+                                    <option class="option-content" value="Mindanao">Mindanao</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" id="questions">
+                    <div id="ques_title">
+                        <h2>
+                            SURVEY QUESTIONS
+                        </h2>
+                    </div>
+                    <div id="ques_01" class="container_02">
+                        <div class="ques_txt">
+                            On average, how many different types of vegetables do you eat in a day?
+                        </div>
+                        <div class="container_03" id="ques_01_radio">
+                                <input type="radio" name="ques01" id="0" value="0" checked>
+                                <label for="0">0</label>
+                                <input type="radio" name="ques01" id="1-5" value="1-5">
+                                <label for="1-5">1-5</label>
+                                <input type="radio" name="ques01" id="6-10" value="6-10">
+                                <label for="6-10">6-10</label>
+                                <input type="radio" name="ques01" id="> 10" value="> 10">
+                                <label for="> 10">> 10</label>
+                        </div>
+                        
+
+                    </div>
+
+                    <div id="ques_02" class="container_02">
+                        <div class="ques_txt">
+                            <span> Select all vegetables that you have eaten </span>
+                        </div>
+                        <div class="wrapper">
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="bataw" value="bataw" unchecked>
+                                <label class="label_checkbox" for="bataw">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_01_crop.png" id="veg_01" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_01_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Bataw (Hyacinth Bean)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="patani" value="patani" unchecked>
+                                <label for="patani">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_02_crop.png" id="veg_02" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_02_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Patani (Lima Bean)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="talinum" value="talinum" unchecked>
+                                <label for="talinum">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_03_crop.png" id="veg_03" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_03_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Talinum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="alugbati" value="alugbati" unchecked>
+                                <label for="alugbati">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_04_crop.png" id="veg_04" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_04_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Alugbati (Malabar Spinach)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="paayap" value="paayap" unchecked>
+                                <label for="paayap">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_05_crop.png" id="veg_05" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_05_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Paayap (Cowpea)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="sigarilyas" value="sigarilyas" unchecked>
+                                <label for="sigarilyas">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_06_crop.png" id="veg_06" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_06_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Sigarilyas (Winged Bean)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="kulitis" value="kulitis" unchecked>
+                                <label for="kulitis">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_07_crop.png" id="veg_07" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_07_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Kulitis (Amaranth)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="kadyos" value="kadyos" unchecked>
+                                <label for="kadyos">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_08_crop.png" id="veg_08" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_08_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Kadyos (Pigeon Pea)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="tapilan" value="tapilan" unchecked>
+                                <label for="tapilan">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_09_crop.png" id="veg_09" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_09_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Tapilan (Rice Bean)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="saluyot" value="saluyot" unchecked>
+                                <label for="saluyot">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_10_crop.png" id="veg_10" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_10_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Saluyot (Long-Fruited Jute)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="katuray" value="katuray" unchecked>
+                                <label for="katuray">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_11_crop.png" id="veg_11" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_11_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Katuray (Corkwood Tree Blossoms)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="tugi" value="tugi" unchecked>
+                                <label for="tugi">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_12_crop.png" id="veg_12" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_12_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Tugi (Lesser Yam)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="pako" value="pako" unchecked>
+                                <label for="pako">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_13_crop.png" id="veg_13" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_13_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Pako (Fiddlehead Fern)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="alukon" value="alukon" unchecked>
+                                <label for="alukon">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_14_crop.png" id="veg_14" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_14_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Alukon/Himbabao (Birch Flower)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+                            <div class="container_04">
+                                <input type="checkbox" name="ques02" id="apulid" value="apulid" unchecked>
+                                <label for="apulid">
+                                    <div class="zoom">
+                                        <img src="veg_img/veg_15_crop.png" id="veg_15" class="zoom_img">
+                                        <div class="dropdown-content">
+                                            <img src="veg_img/veg_15_crop_b.png" class="dropdown_content_img">
+                                            <div class="dropdown_txt">
+                                                Apulid (Water Chestnut)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+    
+
+                        </div>
+                        
+                    </div>
+
+                    <div id="ques_03" class="container_02">
+                        <div class="ques_txt">
+                            <span>List down below the vegetables that you eat regularly</span>
+                        </div>
+                        <div class="container_03">
+                            <textarea name="ques03" id="ques03" rows="5" placeholder="Enter text here..." cols="20"></textarea>
+                        </div>
+                    </div>
+                    <div id="submit_button" class="container_02">
+                        <button id="submit" type="submit" class="btn btn-primary" >SUBMIT</button>
+                    </div>
+                </div>
+
+                
+
+               
+            </form>
+        </div>
+         
+    </body>
+</html>

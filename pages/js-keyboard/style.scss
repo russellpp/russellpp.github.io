@@ -1,0 +1,63 @@
+
+body{ 
+    #output {
+        width: 1202px;
+        padding: 10px;
+        border-radius: 10px;
+        height: 50px;
+        background-color: black;
+        color: #fff;
+        margin-bottom: 10px;
+        font-size: 20px;
+
+
+    
+    }
+
+    dl {
+        background-color: aqua;
+        display: grid;
+        width: 1202px;
+        grid-template-columns: repeat(15, 80px);
+        grid-template-rows: repeat(5,auto);
+        column-gap: 0px;
+        border: 2px solid black;
+        margin: 0px;
+        padding: 5px;
+        border-radius: 20px;
+
+     
+    }
+        dd {
+            border: 2px solid black;
+            height: 80px;
+            margin: 2px;
+            text-align: left;
+            padding-top: 5px;
+            padding-left: 5px;
+            border-radius: 15px;
+            background-color: antiquewhite;
+        }
+
+        dd:nth-child(14) {
+            grid-column: span 2;
+        }
+        dd:nth-child(15) {
+            grid-column: span 2;
+        }
+        dd:nth-child(29) {
+            grid-column: span 2;
+        }
+        dd:nth-child(41) {
+            grid-column: span 2;
+        }
+        dd:nth-child(42) {
+            grid-column: span 2;
+        }
+        dd:nth-child(53) {
+            grid-column: span 2;
+        }
+        dd:nth-child(56) {
+            grid-column: span 8;
+        }
+}

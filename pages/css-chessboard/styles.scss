@@ -1,0 +1,45 @@
+html {
+    background-color: #fff5ddea;
+}
+
+body {
+
+    color: rgb(206, 151, 80);
+    main {
+
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 80vh;
+        height: 80vh;
+        background-color: yellow;
+
+        .one {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+
+        }
+        .two {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+        }
+        .black {
+            background-color: #296f25ea;
+            width: 10vh;
+            height: 10vh;
+
+            }
+        .white {
+            background-color: #a4a156ea;
+            width: 10vh;
+            height: 10vh;
+
+            }
+        }
+
+
+
+    }

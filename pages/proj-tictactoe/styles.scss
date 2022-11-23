@@ -1,0 +1,287 @@
+@mixin center-transform {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+@mixin font($size) {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: $size;
+  text-transform: lowercase;
+}
+
+@mixin transition($prop, $time) {
+  transition: $prop $time ease;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: white;
+}
+
+#start-game {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  p {
+    @include center-transform;
+    @include font(50px);
+    top: 25%;
+    letter-spacing: 2px;
+  }
+  #player-01,
+  #player-02 {
+    @include center-transform;
+    @include font(20px);
+    height: 30px;
+    border: none;
+    border-bottom: 0.5px solid white;
+    width: 170px;
+    background: none;
+    outline: none;
+    text-align: center;
+    padding: none;
+    padding-bottom: 8px;
+    color: white;
+    transition: 0.5s ease;
+    &::placeholder {
+      @include font(20px);
+      color: gray;
+    }
+    &:hover {
+      &::placeholder {
+        color: white;
+      }
+    }
+    &:focus {
+      border-bottom: 1.5px solid white;
+      width: 190px;
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+  #player-01 {
+    top: 42%;
+  }
+  #player-02 {
+    top: 50%;
+  }
+  #start-button {
+    @include center-transform;
+    @include font(20px);
+    cursor: pointer;
+    top: 60%;
+    padding: 5px 10px 8px;
+    text-align: center;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    &:hover {
+      background-color: gray;
+    }
+    &:focus {
+      background-color: white;
+      color: black;
+      border: 3px solid gray;
+    }
+  }
+}
+
+.board {
+  @include center-transform;
+  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  display: grid;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+.game {
+  .display {
+    @include center-transform;
+    filter: invert(100%);
+    top: 9%;
+    height: 80px;
+    width: 80px;
+  }
+  p {
+    @include font(20px);
+    letter-spacing: 1px;
+    &:nth-child(2) {
+      @include center-transform;
+      top: 21%;
+    }
+  }
+}
+
+.block,
+.blockH {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  filter: invert(100%);
+  border: 2px solid gray;
+  cursor: pointer;
+  img {
+    height: 95px;
+  }
+  &:first-child {
+    border-top: none;
+    border-left: none;
+  }
+  &:nth-child(2) {
+    border-top: none;
+  }
+  &:nth-child(3) {
+    border-top: none;
+    border-right: none;
+  }
+  &:nth-child(4) {
+    border-left: none;
+  }
+
+  &:nth-child(6) {
+    border-right: none;
+  }
+  &:nth-child(7) {
+    border-left: none;
+    border-bottom: none;
+  }
+  &:nth-child(8) {
+    border-bottom: none;
+  }
+  &:last-child {
+    border-bottom: none;
+    border-right: none;
+  }
+}
+
+.buttons-container {
+  @include center-transform;
+  top: 75%;
+}
+
+.icon {
+  height: 70px;
+  width: 70px;
+  filter: invert(50%);
+  cursor: pointer;
+  transition: 0.3s ease;
+  &:hover {
+    filter: invert(100%);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+#result {
+  @include center-transform;
+  transform: translateY(-50%) translateX(-50%);
+  height: 700px;
+  width: 100vw;
+  top: 50%;
+
+  background-color: rgba(255, 255, 255, 0.498);
+  p {
+    @include center-transform;
+    @include font(30px);
+    top: 5%;
+  }
+  button {
+    @include center-transform;
+    @include font(20px);
+    top: 83%;
+    padding: 5px 10px 8px;
+    text-align: center;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+    &:focus {
+      background-color: white;
+      color: black;
+      border: 3px solid gray;
+    }
+  }
+}
+
+#history {
+  p {
+    @include center-transform();
+    @include font(30px);
+    top: 17%;
+  }
+  button {
+    @include center-transform();
+    @include font(20px);
+    top: 88%;
+    padding: 5px 10px 8px;
+    text-align: center;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    &:hover {
+      background-color: gray;
+    }
+    &:focus {
+      background-color: white;
+      color: black;
+      border: 3px solid gray;
+    }
+  }
+}
+
+.hover-x {
+  &::after {
+    content: url(icons/x-mark.svg);
+    filter: invert(50%);
+    position: relative;
+    left: 11px;
+    height: 95px;
+    width: 95px;
+    display: none;
+  }
+  &:hover {
+    &::after {
+      display: flex;
+    }
+  }
+}
+
+.hover-o {
+  &::after {
+    content: url(icons/o-mark.svg);
+    filter: invert(50%);
+    position: relative;
+    left: 6px;
+    height: 95px;
+    width: 95px;
+    display: none;
+  }
+  &:hover {
+    &::after {
+      display: flex;
+    }
+  }
+}

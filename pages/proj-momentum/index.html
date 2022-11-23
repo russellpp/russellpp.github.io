@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Momentum</title>
+    </head>
+    <body>
+        <div id="weatherWrapper">
+            <span></span>
+            <br>
+            <span></span>
+        </div>
+        <div id="clock" class="hidden">
+            <span id="time">00:00</span>
+        </div>
+
+        <div class="nameWrapper">
+            <form id="nameForm" class="hidden">
+                <legend id = "nameWhat">What is your name?</legend>
+                <input id = "nameInput" required maxlength="12" type="text">
+            </form>
+            <span id="greeting" class="hidden"></span>
+        </div>
+
+        <div class="focusWrapper">
+            <form id="focusForm" class="hidden">
+                <span>What is you focus today?</span>
+                <br>
+                <input id="focusInput" type="text">
+            </form>
+            <span id="today" class="hidden">TODAY</span>
+            <span id="focus" class="hidden">
+                <img src="">
+                <span></span>
+            </span>
+        </div>
+
+        <div id="todoWrapper" class="hidden">
+            <div id="todoContainer">
+                <div id="showDone-button">
+                    <img src="icon/list_icon.svg">
+                </div>
+                <form id="todo-form">
+                    <legend>To do</legend>
+                    <input type="text" required/>
+                </form>
+                <ul id="todo-list">
+                </ul>
+            
+                
+            </div>
+           <div id="dtdContainer">
+                <p id="items-done">Items done</p>
+                <ul id="done-list">
+                </ul>
+           </div>
+        </div>
+        
+           
+        <div id="quoteWrapper" class="hidden">
+            <span id="quoteContent">quote here</span>
+            <br>
+            <span id="author">author here</span>
+            <img id="quoteButton" src="icon/edit_icon.svg">
+        </div>
+        <div id="quoteFormWrapper">
+            <form id="quoteForm">
+                <input id="quoteInput" required type="text" placeholder="Enter Quote Here">
+                <br>
+                <input id="authorInput" required type="text" placeholder="Enter Author Here">
+                <br>
+                <input id="addQuoteButton" type="button" value="Add Quote">
+            </form>
+            
+        </div>
+        <div id="bgInfo" class="hidden">
+            <span>peeepee</span>
+            <br>
+            <span>pp</span>
+            <a href=""><img id="pin-icon" src="icon/pin_icon.svg"></a>
+        </div>
+        <div id="refresh" class="hidden">
+            <img src="icon/refresh_icon.svg">
+        </div>
+        
+        
+    </body>
+    <script src="app.js"></script>
+</html>

@@ -1,0 +1,436 @@
+@font-face {
+    font-family: 'Bebas';
+    src: url('fonts/BebasNeue-Regular.eot');
+    src: url('fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-Regular.woff') format('woff'),
+         url('fonts/BebasNeue-Regular.woff') format('woff2'),
+         url('fonts/BebasNeue-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+        
+        
+}
+
+@font-face {
+    font-family: 'OkineSans';
+    src: url('fonts/MADEOkineSansPERSONALUSE-Regular.otf');
+    src: url('fonts/MADEOkineSansPERSONALUSE-Regular.otf') format('opentype'),
+       
+}
+
+html {
+    background-image: url(bg_1.jpg);
+    
+}
+
+#body {
+    position:relative;
+    width: 950px;
+    padding: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: rgb(47, 189, 150);
+    border-radius: 50px;
+    box-shadow: 0 0 25px rgba(28, 22, 81, 0.749);
+    display: block;
+    flex-wrap: wrap
+}
+
+h1{
+    width: 950px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #4f296e;
+    font-family: "Bebas";
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 0 0 4px #4b1d5b86;
+    
+}
+
+#survey_desc {
+    text-align: center;
+    padding-left: 50;
+    padding-right: 50;
+    margin-top: 0;
+    font-family: "Bebas";
+    color: #6e295a76;
+    font-weight: lighter;
+    text-shadow: 0 0 2px #aa3d8b86;
+    font-size: 30px;
+
+    
+}
+
+#name-label, #email-label, #number-label, #dropdown {
+    min-width: 0;
+    display: block;     
+}
+
+
+
+h2{
+    position: relative;
+    width: 800px;
+    height: auto;
+    margin-left:  auto;
+    margin-right: auto;
+    padding-top: 20px;
+    text-align: center;
+    color: #4f296e;
+    text-shadow: 0 0 2px #39333786;
+    
+}
+
+h3{
+    font-size: 15;
+    width: 800px;
+    height: auto;
+    margin: 10px;
+    margin-top: -10px;
+    margin-left:  auto;
+    margin-right: auto;
+    font-weight: lighter;
+    text-align: center;
+    text-shadow: 0 0 .5px #39333786;
+    color:  rgba(88, 88, 88, 0.386);
+}
+
+h4 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container {
+    position: relative;
+    font-family: "OkineSans";
+    width: 900px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: rgb(214, 245, 245);
+    border-radius: 25px;
+    border: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 25px rgba(17, 79, 58, 0.744)
+      
+}
+#info {
+    flex-wrap: nowrap;
+ 
+
+}
+
+#info_ques {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#info label {
+    font-size: 15px;
+    text-shadow: 0 0 1.5px #311b2a69;
+    color: #4f296e;
+    
+}
+
+input[type=text] {
+    margin: 10px;
+    margin-left: 0;
+    padding: 5px;
+    width: 250px;
+    box-sizing: border-box;
+    border: none; 
+    border-bottom: .5px solid #9d4784;
+    background: transparent;
+    font-family: "OkineSans";
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%
+}
+
+.container .container_01 {
+    width: 350px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.container .container_02 {
+    position: relative;
+    width: 800px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding: 5px
+}
+
+.container_03 {
+    width: 930px;
+    margin-top: 10px;
+}
+
+#questions {
+    padding: 10px 0
+}
+
+
+select {
+    box-shadow: 0 0 10px rgba(15, 4, 116, 0.554);
+    font-size: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    background:#c275ac;
+    border: 0;
+    width: 250;
+    font-family: "OkineSans";
+    transition: all 0.3s ease-in-out;
+    
+}
+
+select:hover {
+    background-color: #6e295b;
+    color: white;
+}
+
+.ques_txt {
+    position: relative;
+    text-align: center;
+    margin-top: 0px;
+    color: white;
+    text-shadow: 0 0 5px #39333786;
+    background-color: #53356b;
+    padding: 15px 10px 15px 10px;
+    box-shadow: 0 0 5px rgba(17, 79, 58, 0.744) ;
+    
+    
+}
+
+input[type=radio]{
+    display: none;
+}
+.container_03 {
+    display: flex;
+    width: 700;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-top: 20;
+
+}
+.container_03 label{
+    position: relative;
+    width: 80px;
+    color: #9d4784;
+    border: 2px solid #9d4784 ;
+    border-radius: 4px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(18, 1, 168, 0.216);
+    transition: all 0.3s ease-in-out;
+}
+
+.container_03>label:hover {
+    background-color: #b0739f58;
+}
+
+.container_03 label:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";    
+}
+
+input[type=radio]:checked + label{
+    background-color: #9d4784;
+    color: white;
+    box-shadow: 0 0 10px rgba(18, 1, 168, 0.472)
+}
+
+input[type=radio]:checked + label:before{
+    content: "\f192";
+}
+
+.container_04 {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 0 25px rgba(17,1,168,0.08);
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.container_04:hover {
+    background-color: #cd3fa585;
+}
+
+.wrapper {
+    width: 790px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly
+
+}
+
+input[type=checkbox] {
+    -webkit-appearance: none;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+input[type=checkbox]:after {
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    font-size: 18px;
+    content: "\f111";
+    color: #9d478591;
+    right: 13px;
+    top: 5px;
+}
+
+input[type=checkbox]:before {
+   position: absolute;
+   background-color: bal;
+   content: "";
+   width: 200;
+   height: 200;
+   margin-left: -4px;
+   margin-top: -3px;
+   border-radius: 20px;
+   
+}
+
+input[type=checkbox]:checked:after {
+    font-weight: 900;
+    content: "\f058" ;
+    color: #ffffff;
+}
+
+input[type=checkbox]:checked:before{
+    background-color: #9d4784
+}
+
+.container_04 .zoom .zoom_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    position: absolute;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 75%;
+    top: 75%;
+    width: 300px;
+    height: 260px;
+    border: 2px solid #6e295b;
+    border-radius: 10px;
+    background-color: #fffffffc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown_content_img {
+   border-radius: 10px;
+}
+
+
+
+.zoom:hover .dropdown-content {
+display: flex;
+flex-wrap: wrap;
+}
+
+.dropdown_txt{
+    margin-top: 10;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+textarea {
+    background-color: #9d478517;
+    height: 30px;
+    width: 500px;
+    height: 200;
+    color: #9d4784;
+    font-size: 15px;
+    resize: none;
+    padding: 10px;
+    outline: none ;
+    border: 1px solid #9d4784;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out
+}
+
+textarea:focus {
+    width: 72%;
+    color: #6e295b;
+    text-shadow: .3px .3px #6e295b;
+    background-color: #b023882e;
+}
+
+textarea:hover {
+    cursor: text;
+    background-color: #b023882e;
+    color: #6e295b;
+    text-shadow: .3px .3px #6e295b;
+}
+
+
+#submit {
+    display: block;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "OkineSans";
+    font-size: 20px;
+    color: white;
+    width: 120px;
+    height: 35;
+    border: none;
+    border-radius: 10px;
+    background-color: #6e295b;
+    padding: 5px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(18, 1, 168, 0.216);
+    transition: all 0.2s ease-in-out;    
+}
+
+#submit:hover {
+    font-family: "OkineSans";
+    color:#6e295b;
+    border-radius: 10px;
+    border: 1px solid #6e295a7c;
+    background-color: #81398b7c;
+    padding: 5px 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(18, 1, 168, 0.444);
+    text-shadow: .3px .3px #6e295b;
+}
+

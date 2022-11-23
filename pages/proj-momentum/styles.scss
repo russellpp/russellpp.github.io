@@ -1,0 +1,390 @@
+
+
+$fSize01: 8rem;
+$spacer01: 2rem;
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden{
+    display: none;
+}
+
+.through{
+    text-decoration: line-through;
+}
+
+body {
+    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+
+}
+
+#clock {
+    
+    
+    position: absolute;
+    top: 30vh;
+    transform: translateX(-50%);
+    left: 50vw;
+    #time {
+            font-size: $fSize01;
+        }
+    
+}
+
+.nameWrapper {
+    position: absolute;
+    top: 50vh;
+    transform: translateX(-50%);
+    left: 50vw;
+    font-size: 0.1*$fSize01;
+    legend {
+        color: white;
+        font-size: 38px;
+    }
+    input {
+        width: 70%;
+        height: 65px;
+        padding: 0;
+        color: white;
+        font-size: 38px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        
+        outline: none;
+        text-align: center;
+        
+    }
+
+}
+
+#nameInput:focus {
+    
+        border-bottom: 2px solid rgb(255, 255, 255);
+        width: 80%;
+        transition: 0.8s ease;
+
+    
+}
+
+
+.focusWrapper {
+    position: absolute;
+    top: 60vh;
+    transform: translateX(-50%);
+    left: 50vw;
+    
+    display: flex;
+    flex-direction: column;
+    font-size: 0.2*$fSize01;
+    #focusForm {
+        legend {
+            font-size: 0.2*$fSize01;
+        }
+        #focusInput {
+            margin-top: 0.3*$spacer01;
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            width: 400px;
+            font-size: 0.2*$fSize01;
+            text-align: center;
+            color: #fff;
+            :focus {
+                border-bottom: 2px solid rgb(255, 255, 255);
+                width: 80%;
+                transition: 0.8s ease;
+            }
+            :hover {
+                border-bottom: 2px solid rgb(255, 255, 255);
+                width: 80%;
+                transition: 0.8s ease;
+            }
+    }
+    }
+    #focus {
+        font-size: 0.2*$fSize01;
+
+        img{
+            cursor: pointer;
+            position: relative;
+            width: 0.12*$fSize01;
+            height: 0.12*$fSize01;
+            margin-right: 6px;
+            margin-top: 3px;
+        }
+    }
+    #today {
+        font-size: 0.2*$fSize01;
+        
+        margin-bottom: $spacer01;
+    }
+}
+
+#greeting {
+    
+    font-size: 40px;
+   
+    padding: 0;
+}
+
+#quoteWrapper {
+    
+    position: absolute;
+    transform: translateX(-50%);
+    bottom: 20px;
+    left: 50vw;
+
+    #quoteContent {
+        font-size: 0.14*$fSize01;
+        font-weight: normal;
+    }
+    #author {
+        font-size: 0.12*$fSize01;
+        margin-top: 0.3*$spacer01;
+    }
+    img {
+        position: relative;
+        transform: translateY(+15%);
+        height: 0.12*$fSize01;
+        cursor: pointer;
+        filter: invert(100%);
+    }
+}
+
+
+
+#todoContainer {
+    border-radius: 5px;
+    position: absolute;
+    min-width: 300px;
+    top: 55%;
+    left: 80%;
+    color: black;
+    background-color: rgba(250, 235, 215, 0.508);
+    padding: 10px;
+    
+}
+
+#dtdContainer {
+    position: absolute;
+    border-radius: 5px;
+    min-width: 300px;
+    top: 30%;
+    left: 80%;
+    color: black;
+    background-color: rgba(250, 235, 215, 0.508);
+    padding: 10px;
+    #items-done {
+        padding-left: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+        
+    }
+}
+
+
+#todo-form>legend{
+    margin-left: 35px;
+    text-align: left;
+    padding: 0;
+    font-weight: 400;
+    font-size: 20px;
+    
+}
+
+#todo-form>input{
+  
+    
+    width: 200px;
+    height: 35px;
+    padding: 0;
+    
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    text-align: center;
+}
+
+#todo-list{
+    
+   
+    width: 190px;
+    font-weight: 400;
+    font-size: 15px;
+    list-style: none;
+    text-align: left;
+}
+.todocheck{
+    filter: invert(100%);
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    margin-top: 4px;
+}
+#done-list{
+    display: hidden;
+    
+    
+    width: 190px;
+    font-weight: 400;
+    font-size: 15px;
+    list-style: none;
+    text-align: left;
+}
+
+#done-list > img{
+    filter: invert(100%);
+    position: relative;
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+    margin-top: 1px;
+}
+
+
+  
+
+
+  
+#showDone-button > img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+    height: 20px;
+}
+
+.timeAgo {
+    margin-left: 10px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    font-style: italic;
+}
+
+.background{
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    z-index: -1; 
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}
+
+#bgInfo {
+    
+    position: absolute;
+    margin-left: 10px;
+    bottom: 10px;
+    text-align: left;
+    font-size: 12px;
+}
+
+#bgInfo span:nth-child(3){
+    
+    margin-bottom: 3px;
+    font-size: 15px;
+    text-align: left;
+}
+
+#pin-icon {
+    position: relative;
+    transform: translateY(+10%);
+    height: 13px;
+    margin-left: 2px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+#quoteFormWrapper {
+    
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(250, 235, 215, 0.508);
+    transform: translateX(-50%);
+    left: 50vw;
+    bottom: 10vh;
+    border-radius: 5px;
+    #quoteInput {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1.5px solid white;
+        padding-bottom: 2px;
+        outline: none;
+        width: 400px;
+        font-size: 0.1*$fSize01;
+        text-align: center;
+        color: #fff;
+        
+    }
+    #authorInput {
+        margin-top: 5px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1.5px solid white;
+        padding-bottom: 2px;
+        outline: none;
+        width: 400px;
+        font-size: 0.1*$fSize01;
+        text-align: center;
+        color: #fff;
+        width: 200px;
+       
+    }
+    #addQuoteButton {
+        background-color: rgba(250, 235, 215, 0.856);
+        padding-left: 5px;
+        padding-right: 5px;
+        cursor: pointer;
+        margin-top:8px;
+        border: none;
+        border-radius: 3px;
+    }
+
+}
+
+.icon {
+    position: relative;
+    filter: invert(40%);
+    height: 12px;
+    margin-left: 15px;
+    transform: translateY(+15%);
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.iconWhite {
+    filter: invert(100%);
+    height: 12px;
+    padding-right: 10px;
+    transform: translateY(+15%);
+}
+
+#refresh {
+    img {
+        height: 20px;
+        filter: invert(100%);
+
+    }
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
