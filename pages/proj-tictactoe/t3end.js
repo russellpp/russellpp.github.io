@@ -7,7 +7,7 @@ const endButton = document.querySelector("#end-button");
 const historyBoard = document.querySelector("#boardHistory");
 const historyBlocks = document.querySelectorAll(".blockH");
 const moveText = document.querySelector("#history :first-child");
-const refreshButton = document.querySelector("#history > button")
+const refreshButton = document.querySelector("#history > button");
 
 showHistoryButton.addEventListener("click", showHistory);
 prevButton.addEventListener("click", showPrev);
@@ -47,8 +47,29 @@ function printBoard(flatBoard) {
   }
 }
 
+function printMoveNumber() {
+  if (historyState == 0) {
+    moveText.innerHTML = "start";
+  } else if (historyState < matchHistory.length - 1) {
+    moveText.innerHTML = `move ${historyState}`;
+  } else {
+    moveText.innerHTML = endGameResult.innerHTML;
+  }
+}
+
+function printBlank() {
+  historyBlocks.forEach((block) => {
+    block.innerHTML = "";
+  });
+  printMoveNumber();
+}
+
 function showPrev() {
-  historyState--;
+  if (historyState <= 0){
+    historyState = 0
+  } else {
+    historyState--;
+  }
   if (historyState > 0) {
     printHistory();
   } else {
@@ -93,30 +114,8 @@ function playLoop() {
   } else {
     historyState = matchHistory.length - 1;
   }
-  
-}
-
-function printBlank() {
-  historyBlocks.forEach((block) => {
-    block.innerHTML = "";
-  });
-  printMoveNumber();
-}
-
-function printMoveNumber() {
-  if (historyState == 0) {
-    moveText.innerHTML = "start";
-  } else if (historyState < matchHistory.length - 1) {
-    moveText.innerHTML = `move ${historyState}`;
-  } else {
-    moveText.innerHTML = endGameResult.innerHTML;
-  }
 }
 
 function refreshGame() {
   window.location.reload();
- 
 }
-
-
-
