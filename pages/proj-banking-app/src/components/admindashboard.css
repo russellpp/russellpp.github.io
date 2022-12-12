@@ -1,0 +1,26 @@
+:root{
+    --darkBlue: #15324d;
+    --darkRed: #A52727;
+    --grey: white;
+    --lightBlue:#0b8ae6;
+  }
+
+
+.adminDashboard{
+    display: flex;
+    flex-direction: row;
+    height:700px;
+    width: 1000px;
+    border-radius: 15px;
+    border: 1px solid var(--darkBlue);
+    box-shadow: 3px 5px 5px 3px var(--darkBlue); 
+    
+}
+
+.adminContent{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+

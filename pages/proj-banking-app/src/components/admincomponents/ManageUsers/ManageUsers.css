@@ -1,0 +1,86 @@
+.AdminDashContainer {
+    display: grid;
+    height: 100%;
+    box-sizing: border-box;
+    width: 800px;
+    grid-template-rows: 80px 570px 50px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.AdminDashHeader {
+    width: 800px;
+    background-color: var(--grey);
+    border-top-right-radius: 15px;
+    
+}
+
+.AdminDashHeader span{
+    position: relative;
+    left: 30px;
+    top: 15px;
+    color: var(--darkBlue);
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.AdminDashFooter {
+    width: 800px;
+    background-color: var(--darkRed);
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+}
+
+.AdminDashFooter span {
+    color: white;
+    position: relative;
+    left: 530px;
+    font-size: 20px;
+    font-family: 'Segoe UI',;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 800;
+}   
+.AdminDashBody {
+    width: 800px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 350px 200px;
+}
+
+.AccountListWrapper {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.SearchBarContainer {
+    
+    align-self: flex-start;
+}
+
+.SearchBarContainer span {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    color: var(--darkBlue);
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 50px;
+    padding: 10px;
+}
+
+.ListBoxWrapper {
+    box-sizing: border-box;
+    border: 2px solid var(--darkBlue);
+    padding: 10px;
+    margin: 5px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+    
+

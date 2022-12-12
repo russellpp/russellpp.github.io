@@ -1,0 +1,93 @@
+:root{
+    --darkBlue: #15324d;
+    --darkRed: #A52727;
+    --grey: white;
+    --lightBlue:#0b8ae6;
+  }
+
+  .logoutAdmin{
+    width: 40px;
+    height: 40px;
+  }
+
+  .logoutAdmin:hover{
+    cursor:pointer;
+  }
+
+  .customerLogo{
+    width:30px;
+    height:30px;
+  }
+  .depositLogo{
+    width:30px;
+    height:30px;
+  }
+  .withdrawLogo{
+    width:30px;
+    height:30px;
+  }
+  .transferLogo{
+    width:30px;
+    height:30px;
+  }
+
+.sideBarContainer{
+    display:flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 700px;
+    width:200px;
+    border-right: 2px solid var(--darkBlue);
+    background-color: var(--darkBlue);
+    color:white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.sideBarNav{
+    display:flex;
+    position: absolute;
+}
+
+.sideBarTop{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+}
+
+.sideBarBottom{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+}
+
+.sideBarNavList > li{
+    display: flex;
+    padding:10px;
+    align-items: center;
+}
+
+.manageUsers, .depositOption, .withdrawOption, .transferOption{
+    padding-left:10px;
+}
+
+.sideBarNavList > li:hover{
+    background:white;
+    color:var(--darkBlue);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+
+}

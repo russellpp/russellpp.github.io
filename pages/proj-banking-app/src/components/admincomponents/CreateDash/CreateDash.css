@@ -1,0 +1,53 @@
+.AdminDashContainer {
+    display: grid;
+    height: 100%;
+    box-sizing: border-box;
+    width: 800px;
+    grid-template-rows: 100px 550px 50px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.AdminDashHeader {
+    width: 800px;
+    background-color: var(--grey);
+    border-top-right-radius: 15px;
+}
+.AdminDashFooter {
+    width: 800px;
+    background-color: var(--darkRed);
+    border-bottom-right-radius: 15px;
+    padding: 10px;
+}
+.AdminDashBody {
+    width: 800px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 350px 200px;
+}
+
+.AccountListWrapper {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.SearchBarContainer {
+    box-sizing: border-box;
+    height: 50px;
+    padding: 10px;
+}
+
+.ListBoxWrapper {
+    box-sizing: border-box;
+    border: 2px solid var(--darkBlue);
+    padding: 10px;
+    margin: 5px;
+    height: 270px;
+    border-radius: 10px;
+}
+
+    
+

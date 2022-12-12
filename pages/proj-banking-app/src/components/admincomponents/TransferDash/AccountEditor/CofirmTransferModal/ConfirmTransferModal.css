@@ -1,0 +1,90 @@
+.DeleteModalFooter {
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  font-size: 15px;
+}
+
+.Modal {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  height: auto;
+  width: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--darkBlue);
+  border-radius: 10px;
+  box-shadow: 2px 4px 4px 2px var(--darkBlue);
+  padding: 5px;
+  background-color: var(--grey);
+  animation: appear 150ms ease-in;
+  z-index: 3;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ModalBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.ModalBody :first-child {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.ModalBody :nth-child(6) {
+    margin-bottom: 10px;
+}
+
+
+.ModalBody button {
+  bottom: 5px;
+  padding: 5px;
+  outline: 1px solid var(--darkBlue) !important;
+  margin: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.ConfirmButton {
+  background-color: var(--darkBlue);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ConfirmButton:hover {
+  transition: 0.2s;
+  background: linear-gradient(to left, white 50%, var(--darkBlue) 50%) right;
+  background-size: 200% 100%;
+  color: var(--darkBlue);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.CancelButton {
+  background-color: var(--darkRed);
+  color: white;
+  font-weight: 700;
+}
+
+.CancelButton :hover {
+  transition: 0.2s;
+  background: linear-gradient(to left, white 50%, var(--darkRed) 50%) right;
+  background-size: 200% 100%;
+  color: var(--darkRed);
+  font-weight: 700;
+}

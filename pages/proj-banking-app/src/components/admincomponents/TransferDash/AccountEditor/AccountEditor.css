@@ -1,0 +1,82 @@
+.AccountEdit {
+    margin: 20px;
+    min-height: 100px;
+
+}
+
+.AccountEditForm {
+    height: 150px;
+    display: grid;
+    grid-template-areas: 
+    "a1 a2 a3"
+    "b1 b2 b3"
+    ;
+    grid-template-rows: 70px 70px;
+    grid-template-columns: 200px 200px 200px;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+} 
+
+
+
+.AccountEditForm :first-child{
+    grid-area: a1;
+    align-self: center;
+
+}
+
+.AccountEditForm :nth-child(2){
+    grid-area: a1;
+    align-self: flex-end;
+}
+
+.AccountEditForm :nth-child(3){
+    grid-area: a2;
+    align-self: center;
+}
+.AccountEditForm :nth-child(4){
+    grid-area: a2;
+    align-self: flex-end;
+}
+
+.AccountEditForm :nth-child(5){
+    grid-area: a3;
+    align-self: center;
+}
+.AccountEditForm :nth-child(6){
+    grid-area: a3;
+    align-self: flex-end;
+}
+
+.AccountEditForm :nth-child(7){
+    grid-area: b1;
+}
+.AccountEditForm :nth-child(8){
+    grid-area: b1;
+}
+
+.AccountEditForm :nth-child(9){
+    grid-area: b2;
+}
+.AccountEditForm :nth-child(10){
+    grid-area: b2;
+}
+
+.AccountEditForm :nth-child(11){
+    grid-area: b3;
+}
+.AccountEditForm :nth-child(12){
+    grid-area: b3;
+}
+
+.AccountEditForm > button {
+    height: 50px;
+    width: 150px;
+    border: 1px solid var(--darkBlue);
+    cursor: pointer;
+}
+
+.AccountEditForm span :nth-of-type(3){
+    color: blue;
+}
